@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <!-- JavaScript -->
+        <script type="text/javascript" src="{{url_for('static', filename='js/app.js')}}" defer ></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/lightbox.js')}}" defer ></script>
+
+
+        <link rel="stylesheet" href="{{  url_for('static', filename='css/style.css')  }}" />
+        <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+
+
+
+        {% block head %} {% endblock %}
+    </head>
+    <body>
+        <div class="information">
+            <a href="{{ url_for('index') }}"><i class="fas fa-home"></i></a>
+            <a href="{{ url_for('graphs') }}"><i class="fas fa-chart-bar"></i>                
+                </a>
+            <i class="fas fa-info-circle"></i>
+            <div class="info__container">
+                <i class="fas fa-times-circle"></i>
+                <p class="info__p">Thanks for passing by!</p>
+                <p class="info__p">
+                    This webpage is the final project of the Ironhack Data Analyst bootcamp, March 2021. The technologies used are: </p>
+                <ul>
+                    <li><p>· Web Scraping (Beautiful Soup and Selenium) to create a database with information of the books in the Goodreads Choice Awards from 2011 to 2020.</p></li>
+                    <li><p>· Python, NLP and unsupervised machine learning(K-means clustering) to clean and group the data. </p></li>
+                    <li><p>· HTML, CSS, JavaScript, and Flask to design the webpage.</p></li>
+                </ul>
+                <p class="info__p">All the information scraped belongs to Goodreads.</p>
+                <p class="info__p">
+                    Have fun!
+                </p>
+                <p class="info__p">
+                    Sara Martín  <a href="https://www.linkedin.com/in/sara-martin-alonso/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                </p>
+            </div>
+        </div>
+
+        {% block body %} {% endblock %}
+    </body>
+</html>

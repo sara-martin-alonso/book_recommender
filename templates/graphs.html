@@ -1,0 +1,178 @@
+{% extends 'base.html'%} {% block head %}
+<title>Book Recommender</title>
+{% endblock %} {% block body %}
+
+<div class="container">
+    <h2 class="graphs_h2">WordClouds</h2>
+
+    <p class="graphs__descr">Here you can find the most common words used on the books descriptions for each genre. Click on the image to view full size. </p>
+
+
+
+    <div class="lightbox">
+        <i class="lightbox__icon fas fa-times"></i>
+        <img class="lightbox__img" src="" alt="" />
+    </div>
+
+    <div class="graphs__grid">
+        <div class="graphs__box graphs__box--first">
+            <div class="graphs__text">
+                <p class="graphs__p">25 most used words overall</p>
+            </div>
+            <img src="../static/media/most_used.png" alt="Most used words overall" class="graphs__img" />
+        </div>
+    </div>
+
+
+    <div class="graphs__grid">
+        <div class="graphs__box">
+            <div class="graphs__text">
+                <p class="graphs__p">Fantasy</p>
+            </div>
+            <img src="../static/media/Fantasy.png" alt="Fantasy" class="graphs__img" />
+        </div>
+
+        <div class="graphs__box">
+            <div class="graphs__text">
+                <p class="graphs__p">Fiction</p>
+            </div>
+            <img src="../static/media/Fiction.png" alt="Fiction" class="graphs__img" />
+        </div>
+        <div class="graphs__box">
+            <div class="graphs__text">
+                <p class="graphs__p">Food & Cookbooks</p>
+            </div>
+            <img src="../static/media/Food & Cookbooks.png" alt="Food & Cookbooks" class="graphs__img" />
+        </div>
+        <div class="graphs__box">
+            <div class="graphs__text">
+                <p class="graphs__p">Graphic Novels & Comics</p>
+            </div>
+            <img src="../static/media/Graphic Novels & Comics.png" alt="Graphic Novels & Comics" class="graphs__img" />
+        </div>
+        <div class="graphs__box">
+            <div class="graphs__text">
+                <p class="graphs__p">Historical Fiction</p>
+            </div>
+            <img src="../static/media/Historical Fiction.png" alt="Historical Fiction" class="graphs__img" />
+        </div>
+        <div class="graphs__box">
+            <div class="graphs__text">
+                <p class="graphs__p">History & Biography</p>
+            </div>
+            <img src="../static/media/History & Biography.png" alt="History & Biography" class="graphs__img" />
+        </div>
+        <div class="graphs__box">
+            <div class="graphs__text">
+                <p class="graphs__p">Horror</p>
+            </div>
+            <img src="../static/media/Horror.png" alt="Horror" class="graphs__img" />
+        </div>
+        <div class="graphs__box">
+            <div class="graphs__text">
+                <p class="graphs__p">Humor</p>
+            </div>
+                <img
+                    src="../static/media/Humor.png"
+                    alt="Humor"
+                    class="graphs__img"
+                />
+          
+        </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Memoir & Autobiography</p>
+                </div>
+                <img
+                    src="../static/media/Memoir & Autobiography.png"
+                    alt="Memoir & Autobiography"
+                    class="graphs__img"
+                />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Middle Grade & Children's</p>
+                </div>
+                <img
+                    src="../static/media/Middle Grade & Children's.png"
+                    alt="Middle Grade & Children's"
+                    class="graphs__img"
+                />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Mystery & Thriller</p>
+                </div>
+                <img src="../static/media/Mystery & Thriller.png" alt="Mystery & Thriller" class="graphs__img" />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Nonfiction</p>
+                </div>
+                <img src="../static/media/Nonfiction.png" alt="Nonfiction" class="graphs__img" />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Paranormal Fantasy</p>
+                </div>
+                <img src="../static/media/Paranormal Fantasy.png" alt="Paranormal Fantasy" class="graphs__img" />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Picture Books</p>
+                </div>
+                <img src="../static/media/Picture Books.png" alt="Picture Books" class="graphs__img" />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Poetry</p>
+                </div>
+                <img src="../static/media/Poetry.png" alt="Poetry" class="graphs__img" />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Romance</p>
+                </div>
+                <img src="../static/media/Romance.png" alt="Romance" class="graphs__img" />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Science & Technology</p>
+                </div>
+                <img src="../static/media/Science & Technology.png" alt="Science & Technology" class="graphs__img" />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Science Fiction</p>
+                </div>
+                <img src="../static/media/Science Fiction.png" alt=" Science Fiction" class="graphs__img" />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Travel & Outdoors</p>
+                </div>
+
+                <img src="../static/media/Travel & Outdoors.png" alt="Travel & Outdoors" class="graphs__img" />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Young Adult Fantasy & Science Fiction</p>
+                </div>
+
+                <img
+                    src="../static/media/Young Adult Fantasy & Science Fiction.png"
+                    alt="Young Adult Fantasy & Science Fiction"
+                    class="graphs__img"
+                />
+            </div>
+            <div class="graphs__box">
+                <div class="graphs__text">
+                    <p class="graphs__p">Young Adult Fiction</p>
+                </div>
+                <img src="../static/media/Young Adult Fiction.png" alt="Young Adult Fiction" class="graphs__img" />
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+</div>

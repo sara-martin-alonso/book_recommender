@@ -1,0 +1,50 @@
+{% extends 'base.html'%} {% block head %}
+<title>Book Recommender</title>
+
+{% endblock %} 
+
+{% block body %}
+
+<div class="warning"><i class="far fa-sad-tear"></i><p class="warning__p">Unfortunately, an enchantment makes this website disappear for mobile devices. Try again from a laptop!</p>
+    <p class="warning__p">In the meantime, here is a<a href="https://www.goodreads.com/book/show/13642.A_Wizard_of_Earthsea" target="_blank" rel="noopener noreferrer"> book recommendation </a></p>
+    </i></div>
+
+<div class="container">
+    <!-- <i class="fas fa-info-circle"></i> -->
+    <div class="front">
+        <h1 class="h1">Book&nbsp <i class="fas fa-book-open"></i>  &nbspRecommender</h1>
+        <div class="searchBar">
+            <form id='form' action="/" method="POST">
+                <input class='input_url' type="text" name="book_url" id="book_url" placeholder="Copy the url of a book from Goodreads" />
+                <button type="submit"><i class="fas fa-search"></i></button>
+                
+            </form>
+        </div>
+
+        <div class="timeWarn"><b>The Search Has Begun </b> <br> &nbsp (this may take some seconds)</div>
+            
+        <p class="front__p">i.e. this link: <a href="https://www.goodreads.com/book/show/13642.A_Wizard_of_Earthsea" target="_blank" rel="noopener noreferrer">&nbsp&nbsp https://www.goodreads.com/book/show/13642.A_Wizard_of_Earthsea &nbsp&nbsp</a>  </p>
+
+        
+    </div>
+
+    <div class="booksOutput">
+        {% for book in books %}
+        <div class="book">
+            <div class="book__text">
+                <h2 class="book__h2">{{ book['title'] }}</h2>
+                <h3 class="book__h3">by {{ book['author'] }}</h3>
+            </div>
+            <img class='book__img' src="{{ book['img_url'] }}" alt="{{book['title']}}" />
+            <p class="book__genre">{{book['genre']}}</p>
+            <p class="book__descr">{{ book['description']}} </p>
+            <p class="book__descr book__descr--open ">{{ book['description']}} </p>
+            <span class='open_descr'>[ read more ]</span>
+            <span class='close_descr'>[ close ]</span>
+            <a class='book__url' target="_blank"  href="{{ book['url']}} ">More information</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

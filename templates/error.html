@@ -1,0 +1,23 @@
+{% extends 'base.html'%} {% block head %}
+<title>Book Recommender</title>
+{% endblock %} 
+
+{% block body %}
+
+<div class="error__container">
+    <p class="error__p">
+        Oops!  
+    </p>
+    <p class="error__p">
+      Seems like there was an error.
+    </p>
+    <p class="error__p">
+        Probably this book is so good that it can't be compared!
+      </p>
+    <p class="error__p"> Try providing a different book 
+    </p>
+    <p class="error__p"> <a href="{{ url_for('index') }}"><i class="fas fa-home"></i></a>
+    </p>
+</div>
+
+{% endblock %} 
