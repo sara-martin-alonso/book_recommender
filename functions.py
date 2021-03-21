@@ -1,18 +1,15 @@
 from bs4 import BeautifulSoup
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
-
 import warnings
 warnings.filterwarnings('ignore')
 warnings.filterwarnings("ignore", message="numpy.ufunc size changed")
-
-import pandas as pd
 import pandas as pd
 import requests
 import pickle
 import spacy
+nlp = spacy.load('en_core_web_lg')
 
-nlp = spacy.load("en_core_web_md")
 
 text_kmeans = pickle.load( open( "text_kmeans.p", "rb" ) )   
 cluster_kmeans = pickle.load( open( "cluster_kmeans.p", "rb" ) )  

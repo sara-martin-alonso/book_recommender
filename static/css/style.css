@@ -94,19 +94,13 @@ form * {
     font-family: "Gentium Book Basic", serif;
 }
 
-.front__p{
+.front_p{
 width: 75%;
-transform: translateY(-5em);
+
 }
-.front__p > a{
+.front_p > a{
     color: #41658a;
 }
-.front__p.move{
-    transform: translateY(0);
-}
-
-
-
 .searchBar {
     margin: 4em 0 2em;
     background: whitesmoke;
@@ -157,21 +151,6 @@ button[type="submit"]:active {
     align-items: center;
 }
 
-.timeWarn{
-    /* display:none; */
-    margin: 1em 0 2em;
-    opacity: 0;
-    transform: translateY(-50px);
-}
-
-.timeWarn.show{
-    transition: all 1s ease;
-    display:flex;
-    margin: 0.5em 0 2em;
-    opacity: 1;
-    transform: translateY(0px);
-}
-
 
 
 /* book output */
@@ -197,7 +176,6 @@ button[type="submit"]:active {
 
     transform: translateY(-100px);
     transition: all 0.3s ease;
-    margin-bottom: 5em;
 }
 .book.show {
     transform: translateY(0);
@@ -304,7 +282,7 @@ button[type="submit"]:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position:relative;
+    position:relative
 }
 .graphs__descr{
     margin-bottom: 4em;
@@ -316,7 +294,6 @@ button[type="submit"]:active {
     cursor: pointer;
 }
 .graphs__text{
-    border-radius: 15px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -375,7 +352,7 @@ button[type="submit"]:active {
     opacity: 0;
     pointer-events: none;
 
-    z-index:6;
+    z-index:2;
   }
   .lightbox__icon {
     margin-bottom: 20px;
@@ -406,7 +383,6 @@ button[type="submit"]:active {
 
 
 
-
 /* INFORMATION */
 
 .information{
@@ -418,7 +394,6 @@ button[type="submit"]:active {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    z-index:5;
 }
 .information  i.fas{
     font-size: 2em;
@@ -440,7 +415,7 @@ button[type="submit"]:active {
     box-shadow: 0px 0px 8px 0px rgba(21,21,21,0.43);
     -webkit-box-shadow: 0px 0px 8px 0px rgba(21,21,21,0.43);
     -moz-box-shadow: 0px 0px 8px 0px rgba(21,21,21,0.43);
-    z-index: 6;
+    z-index: 1;
 }
 .info__container.show{
     display:flex;
@@ -544,84 +519,3 @@ i.fa-linkedin{
     /* transform: scale(.9); */
    
     }
-
-
-
-
-    .warning{
-        position:fixed;
-        top:0;
-        left:0;
-        background-color: burlywood;
-        display:flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        z-index: 8;
-        width: 100vw;
-        height: 100vh;
-        text-align: center;
-        display:none;
-   
-    }
-   
-    .warning__p{
-        font-size: 1.5em;
-        padding: 0 1em;
-        line-height: 2em;
-    }
-   
-    .fa-sad-tear{
-        font-size: 3em;
-        margin-bottom: 0.5em;
-    }
-
-@media screen and (max-width:  700px){
-.booksOutput{
-    flex-flow:column;
-
-}
-.books{
-    width: 100%;
-}
-  
-.warning__p > a{
-    color: #41658a;
-}
-.graphs__grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    gap: 2em;
-}
-
-.error__container{
-padding: 0;
-}
-
-
-}
-
-
-@media screen and (max-width:  480px){
- .h1{
-     font-size: 3em;
- }
-
- .input_url{
-     min-width: none;
- }
-
- .error__container{
-    font-size: 1.25em;
-    }
-    .warning{
-        display:flex;
-    }
-
-*{
-    overflow: hidden;
-}
- }
-
-
