@@ -1,4 +1,4 @@
-# book_recommender
+# Description
 
 Recommendation of three books based on a GoodReads link provided by the user. 
 
@@ -8,4 +8,5 @@ Recommendation of three books based on a GoodReads link provided by the user.
 
 · HTML, CSS, JavaScript, and Flask to design the webpage
 
-Final bootcamp project.
+# Video
+![caption](https://github.com/sara-martin-alonso/book_recommender/blob/main/Book-Recommender.gif)
